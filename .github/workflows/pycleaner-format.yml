@@ -1,3 +1,19 @@
 name: Pycleaner Format Workflow
 
-# Placeholder workflow skeleton for pycleaner formatting tasks.
+on:
+  push:
+    paths:
+      - '.github/prompts/**'
+      - '.github/skills/**'
+      - '.github/policies/**'
+      - '.github/agents/**'
+      - '.github/workflows/**'
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: |
+          echo "Pycleaner format workflow is valid."
+          echo "No formatting jobs are configured yet."
