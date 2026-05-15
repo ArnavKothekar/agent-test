@@ -18,6 +18,12 @@ file path: `agent-test/.github/skills/pythonic-improvements.skills.md` for Pytho
 
 All of these files contain important information on how to format the code according to pycleaner principles. Refer to them for detailed guidelines on formatting practices.
 
+The agent may read the surrounding workspace to understand context and avoid unsafe changes, but must only modify the explicitly provided file or code snippet.
+
+Idempotency is crucial. Running this agent multiple times on the same code should:
+- Not continuously introduce new changes
+- Converge to a stable formatting and style
+
 ## Input
 Provide the Python code to format. This can be:
 - A full Python file

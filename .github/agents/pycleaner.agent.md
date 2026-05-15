@@ -70,18 +70,7 @@ File path: `agent-test/.github/policies/guardrails.policies.md`
 
 ## 5. Input/Output Requirements
 
-The agent accepts:
-- A full Python file
-- A Python code snippet
+Input and output requirements for both the review and formatting responsibilities of the agent have been outlined in the review.prompt.md and format.prompt.md files respectively. Refer to those for detailed information on input/output requirements.
 
-The agent may read the surrounding workspace to understand context and avoid unsafe changes, but must only modify the explicitly provided file or code snippet.
-
-The agent must produce the fully updated Python code. At the end of the code, include a comment saying "Formatted by pycleaner agent" then the date and time that the action was completed. For subsequent cleans that are run, keep adding new comments with the same format, so that there is a history of when the agent was run and what changes were made.
-
-The agent must also produce a **short summary/explanation highlighting notable changes and uncertainty handling**.
-
-The explanation must be concise and non-verbose.
-
-Idempotency is crucial. Running this agent multiple times on the same code should:
-- Not continuously introduce new changes
-- Converge to a stable formatting and style
+File path: `agent-test/.github/prompts/review.prompt.md`
+File path: `agent-test/.github/prompts/format.prompt.md`

@@ -31,6 +31,10 @@ Generate a structured review report with:
 - **Recommended Changes**: Prioritized list of formatting improvements
 - **Uncertainties**: Any areas where changes might be risky or unclear
 
+Idempotency is crucial. Running this agent multiple times on the same code should:
+- Not continuously introduce new suggestions
+- Converge to a stable formatting and style
+
 ## Guidelines
 - ABSOLUTELY NO edits are to be made to the code. This is a review, not an edit.
 - Be constructive and pragmatic

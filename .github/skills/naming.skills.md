@@ -2,6 +2,8 @@
 
 ### 4.1 Variable Naming Conventions
 
+Elements within python code should follow a standard set of naming practices for clarity. This skill outlines the naming conventions to be upheld by the agent. Wherever needed, the agent will modify code such that the following naming practices are followed.
+
 |Element|Convention|Example|
 |---|---|---|
 |Variables|`snake_case`|`user_input`, `coin_result`|
